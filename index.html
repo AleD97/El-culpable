@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>¿Quién es el culpable?</title>
+</head>
+<body>
+    <h1>¿Quién es el culpable?</h1>
+    <div>
+        <p>Un valioso objeto desapareció de una habitación cerrada con llave. Tres personas estaban dentro de la habitación en el momento del robo: Alex, Bianca y Carlos.</p>
+
+        <ul>
+            <li>Alex dijo: "Yo no lo hice. Bianca es la culpable".</li>
+            <li>Bianca dijo: "No fui yo. Carlos es inocente".</li>
+            <li>Carlos dijo: "Bianca miente. Alex no es inocente"</li>
+        </ul>
+        
+        <p>Si solo una de estas declaraciones es verdadera, ¿quién es el culpable?</p>
+    </div>
+    
+    
+    <div id="sospechosos"></div>
+    <div id="resultado"></div>
+    
+    <p id="explicacion" style="display: none;">Si suponemos que una de estas declaraciones es verdadera, entonces las otras dos deben ser falsas.
+
+        Si la declaración de Alex es verdadera, entonces Bianca es la culpable. Pero esto contradice la declaración de Bianca, por lo que no puede ser cierto.
+        
+        Si la declaración de Bianca es verdadera, entonces Carlos es inocente. Pero esto contradice la declaración de Carlos, por lo que no puede ser cierto.
+        
+        Si la declaración de Carlos es verdadera, entonces Alex no es inocente. Esto significa que Carlos sería el culpable.
+        
+        Por lo tanto, la declaración verdadera es la de Carlos, lo que significa que Alex es el culpable.
+    </p>
+    
+    <script src="main.js"></script>
+</body>
+</html>
