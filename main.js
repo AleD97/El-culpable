@@ -1,8 +1,8 @@
 // Definimos a los sospechosos como objetos
 const sospechosos = [
-    { nombre: "Alex", inocente: true }, // El culpable
-    { nombre: "Bianca", inocente: false },
-    { nombre: "Carlos", inocente: false }
+    { nombre: "Alex" },
+    { nombre: "Bianca" },
+    { nombre: "Carlos" }
 ];
 
 // Contador de intentos
@@ -21,7 +21,7 @@ function mostrarSospechosos(culpable) {
         const button = document.createElement("button");
         button.textContent = sospechoso.nombre;
         button.onclick = function() {
-            if (sospechoso.inocente) {
+            if (sospechoso === culpable) {
                 document.getElementById("resultado").innerText = "¡Has encontrado al culpable! " + sospechoso.nombre + " era el culpable.";
             } else {
                 intentos--;
